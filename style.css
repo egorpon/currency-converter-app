@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #e2e1dd;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #201e1f;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro h1 {
+  font-weight: 600;
+  font-size: 60px;
+}
+
+.intro p {
+  font-size: 1.3rem;
+}
+
+input,
+button,
+select {
+  font: inherit;
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: column;
+}
+
+form span {
+  align-content: center;
+  font-size: 1rem;
+}
+
+:root {
+  --darkreader-border: #486380;
+}
+
+input {
+  background: var(--surface-2);
+  color: var(--text-1);
+  border: 1px solid var(--darkreader-border);
+  border-radius: 6px;
+  padding: 0.5rem 1.5rem 0.5rem 0.5rem;
+}
+
+input::placeholder {
+  color: #c4c4c3;
+}
+input:hover {
+  background-color: #2b2829;
+}
+
+select {
+  background: var(--surface-2);
+  color: var(--text-1);
+  border: 1px solid var(--darkreader-border);
+  border-radius: 6px;
+  padding: 0.5rem 1.5rem 0.5rem 0.5rem;
+}
+
+option {
+  background-color: #201e1f;
+  transition: 0.4s;
+}
+
+form button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background-color: #0056b3;
+  color: inherit;
+  font-weight: 600;
+  padding: 0.75rem 1.75rem;
+  border-radius: 6px;
+}
+
+form button:hover {
+  background-color: #0069d9;
+  cursor: pointer;
+}
+
+.converted-amount {
+  opacity: 0;
+  font-size: 30px;
+  margin: 10px 0;
+  font-weight: 600;
+  color: #a9bdd2;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.converted-amount.visible {
+  opacity: 1;
+}

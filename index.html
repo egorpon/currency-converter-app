@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="intro">
+        <h1>Currency converter</h1>
+        <p>Check live foreign currency exchange rates</p>
+      </div>
+      <form action="" method="post">
+        <input type="text" id="amount" placeholder="Amount" />
+        <span>from</span>
+        <select name="from-currency" id="from-currency">
+          <option value="" selected disabled>-- Select Currency --</option>
+          <option value="EUR">EUR</option>
+          <option value="USD">USD</option>
+          <option value="PLN">PLN</option>
+          <option value="BRL">BRL</option>
+        </select>
+        <span>to</span>
+        <select name="to-currency" id="to-currency">
+          <option value="" selected disabled>-- Select Currency --</option>
+          <option value="EUR">EUR</option>
+          <option value="USD">USD</option>
+          <option value="PLN">PLN</option>
+          <option value="BRL">BRL</option>
+        </select>
+        <button type="submit">Convert</button>
+      </form>
+      <p class="converted-amount"></p>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
